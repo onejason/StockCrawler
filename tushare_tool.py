@@ -2,10 +2,12 @@
 # http://www.361way.com/python-stock-tushare/4579.html
 # http://tushare.org
 
+
 import tushare as ts
 
-#print ts.get_hist_data('600848') #一次性获取全部日k线数据
+df = ts.get_stock_basics()
+# get_stock_basics()并不能得到指数信息
+#print df.head(5)
 
-
-print ts.get_stock_basics()
+print df.ix['000001']
 

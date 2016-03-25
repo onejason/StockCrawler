@@ -5,6 +5,7 @@ import time
 import datetime
 import re
 
+# 查询A股总市值,并与GDP相比,得到巴菲特指数(证券化率)
 
 def sh_volume():
     #上交所
